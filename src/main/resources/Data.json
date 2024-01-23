@@ -1,0 +1,422 @@
+[
+  {
+    "category": "sport",
+    "words": "soccer",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "I enjoy playing soccer with my friends."
+  },
+  {
+    "category": "sport",
+    "words": "basketball",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "She's really good at playing basketball."
+  },
+  {
+    "category": "sport",
+    "words": "swimming",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Swimming is a great way to stay fit."
+  },
+  {
+    "category": "sport",
+    "words": "tennis",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "We're going to play tennis at the park."
+  },
+  {
+    "category": "sport",
+    "words": "running",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "I love running in the morning for exercise."
+  },
+  {
+    "category": "sport",
+    "words": "cycling",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "They often go cycling on the weekends."
+  },
+  {
+    "category": "sport",
+    "words": "hiking",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Hiking in the mountains is a challenging adventure."
+  },
+  {
+    "category": "sport",
+    "words": "skiing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "He's been skiing since he was a child."
+  },
+  {
+    "category": "sport",
+    "words": "golf",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Golf requires precision and focus."
+  },
+  {
+    "category": "sport",
+    "words": "volleyball",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Let's play volleyball on the beach this weekend."
+  },
+  {
+    "category": "sport",
+    "words": "baseball",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "The baseball game was intense and exciting."
+  },
+  {
+    "category": "sport",
+    "words": "cricket",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Cricket is a popular sport in many countries."
+  },
+  {
+    "category": "sport",
+    "words": "surfing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Surfing is a thrilling water sport."
+  },
+  {
+    "category": "sport",
+    "words": "boxing",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "She's training for a boxing match next month."
+  },
+  {
+    "category": "sport",
+    "words": "yoga",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Yoga helps improve flexibility and relaxation."
+  },
+  {
+    "category": "sport",
+    "words": "climbing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Climbing mountains requires strength and endurance."
+  },
+  {
+    "category": "sport",
+    "words": "weightlifting",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Weightlifting is part of his daily workout routine."
+  },
+  {
+    "category": "sport",
+    "words": "dancing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "They enjoy dancing at social events."
+  },
+  {
+    "category": "sport",
+    "words": "table tennis",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Table tennis is a fast-paced indoor sport."
+  },
+  {
+    "category": "sport",
+    "words": "archery",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Archery requires precision and focus."
+  },
+  {
+    "category": "sport",
+    "words": "skateboarding",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Skateboarding is a popular street sport."
+  },
+  {
+    "category": "sport",
+    "words": "sailing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Sailing can be a peaceful and serene activity."
+  },
+  {
+    "category": "sport",
+    "words": "kayaking",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Kayaking in the river is an adventurous experience."
+  },
+  {
+    "category": "sport",
+    "words": "snowboarding",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Snowboarding is a thrilling winter sport."
+  },
+  {
+    "category": "sport",
+    "words": "triathlon",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Completing a triathlon is a significant achievement."
+  },
+  {
+    "category": "sport",
+    "words": "jogging",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Jogging is a simple yet effective way to stay fit."
+  },
+  {
+    "category": "sport",
+    "words": "badminton",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Badminton is a fun and fast-paced racket sport."
+  },
+  {
+    "category": "sport",
+    "words": "squash",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Squash is a high-intensity indoor sport."
+  },
+  {
+    "category": "sport",
+    "words": "ice skating",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Ice skating is a popular winter activity."
+  },
+  {
+    "category": "sport",
+    "words": "surfboard",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "He bought a new surfboard for his surfing trips."
+  },
+  {
+    "category": "sport",
+    "words": "marathon",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Running a marathon requires months of training."
+  },
+  {
+    "category": "sport",
+    "words": "fencing",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Fencing is a traditional sport with a rich history."
+  },
+  {
+    "category": "sport",
+    "words": "karate",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "She holds a black belt in karate."
+  },
+  {
+    "category": "sport",
+    "words": "snorkeling",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Snorkeling allows you to explore the underwater world."
+  },
+  {
+    "category": "sport",
+    "words": "rock climbing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Rock climbing is both challenging and rewarding."
+  },
+  {
+    "category": "sport",
+    "words": "triathlete",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Being a triathlete demands dedication and endurance."
+  },
+  {
+    "category": "sport",
+    "words": "rollerblading",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Rollerblading is a popular recreational activity."
+  },
+  {
+    "category": "sport",
+    "words": "hurdling",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Hurdling requires speed and agility."
+  },
+  {
+    "category": "sport",
+    "words": "ping pong",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Ping pong is another name for table tennis."
+  },
+  {
+    "category": "sport",
+    "words": "horseback riding",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Horseback riding is a great way to connect with nature."
+  },
+  {
+    "category": "sport",
+    "words": "paragliding",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Paragliding offers a breathtaking view from the sky."
+  },
+  {
+    "category": "sport",
+    "words": "skateboarder",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "He's a skilled skateboarder who performs tricks."
+  },
+  {
+    "category": "sport",
+    "words": "mountaineering",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Mountaineering involves climbing high-altitude mountains."
+  },
+  {
+    "category": "sport",
+    "words": "wrestling",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Wrestling is a physically demanding combat sport."
+  },
+  {
+    "category": "sport",
+    "words": "triathlon",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Competing in a triathlon requires stamina in three disciplines."
+  },
+  {
+    "category": "sport",
+    "words": "high jump",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "The high jump is a track and field event."
+  },
+  {
+    "category": "sport",
+    "words": "pole vault",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Pole vaulting is a unique and challenging athletic event."
+  },
+  {
+    "category": "sport",
+    "words": "figure skating",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Figure skating combines artistry and athleticism."
+  },
+  {
+    "category": "sport",
+    "words": "rowing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Rowing is a great cardiovascular exercise."
+  },
+  {
+    "category": "sport",
+    "words": "scuba diving",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Scuba diving allows you to explore underwater ecosystems."
+  },
+  {
+    "category": "sport",
+    "words": "snowshoeing",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Snowshoeing is a winter activity for outdoor enthusiasts."
+  },
+  {
+    "category": "sport",
+    "words": "synchronized swimming",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Synchronized swimming is a graceful water sport."
+  },
+  {
+    "category": "sport",
+    "words": "bungee jumping",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "Bungee jumping provides an adrenaline-pumping experience."
+  },
+  {
+    "category": "sport",
+    "words": "triathlon",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "The triathlon consists of swimming, cycling, and running."
+  },
+  {
+    "category": "sport",
+    "words": "rafting",
+    "wordType": "verb",
+    "pronoun": "it",
+    "exampleSentence": "White-water rafting is an exhilarating water sport."
+  },
+  {
+    "category": "sport",
+    "words": "ski jumper",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "A ski jumper launches into the air off a ski jump."
+  },
+  {
+    "category": "sport",
+    "words": "triathlon",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "She trained tirelessly for the upcoming triathlon."
+  },
+  {
+    "category": "sport",
+    "words": "skatepark",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "The skatepark is a popular spot for skateboarders."
+  },
+  {
+    "category": "sport",
+    "words": "triathlon",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Participating in a triathlon is a personal challenge."
+  },
+  {
+    "category": "sport",
+    "words": "roller derby",
+    "wordType": "noun",
+    "pronoun": "it",
+    "exampleSentence": "Roll"
+  }
+]
