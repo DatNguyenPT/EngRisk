@@ -1,8 +1,6 @@
 package com.DatNguyen.EngRisk;
 
-import com.DatNguyen.EngRisk.Database.Insert;
 import com.DatNguyen.EngRisk.Database.JSONFormat;
-import com.DatNguyen.EngRisk.Database.ParseJSONToSQL;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.Firestore;
 import com.google.firebase.FirebaseApp;
@@ -12,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
+import javax.annotation.PostConstruct;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -21,8 +20,6 @@ public class AppConfig {
     public JSONFormat jsonFormat(){
         return new JSONFormat();
     }
-    @Bean
-    public ParseJSONToSQL parseJSONToSQL() throws IOException {return new ParseJSONToSQL();}
     @Bean
     public Firestore firestore() throws IOException {
         Resource resource = new ClassPathResource("serviceAccountKey.json");
