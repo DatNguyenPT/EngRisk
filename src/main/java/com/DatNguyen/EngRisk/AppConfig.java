@@ -20,17 +20,5 @@ public class AppConfig {
     public JSONFormat jsonFormat(){
         return new JSONFormat();
     }
-    @Bean
-    public Firestore firestore() throws IOException {
-        Resource resource = new ClassPathResource("serviceAccountKey.json");
-        FileInputStream serviceAccount = new FileInputStream(resource.getFile());
 
-        FirebaseOptions options = new FirebaseOptions.Builder()
-                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                .setDatabaseUrl("https://engrisk-5435c-default-rtdb.firebaseio.com")
-                .build();
-
-        FirebaseApp.initializeApp(options);
-        return com.google.firebase.cloud.FirestoreClient.getFirestore();
-    }
 }
