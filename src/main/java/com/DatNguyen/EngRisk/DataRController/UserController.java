@@ -21,12 +21,16 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse>register(@RequestBody RegisterForm registerForm){
-        return new ResponseEntity<>(authService.registration(registerForm), HttpStatus.OK);
+        if (authService.registration(registerForm) != null)
+            return new ResponseEntity<>(authService.registration(registerForm), HttpStatus.OK);
+        return new ResponseEntity<>( HttpStatus.BAD_REQUEST);
     }
 
-    @PostMapping("/register")
+    @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse>login(@RequestBody LoginForm loginForm){
-        return new ResponseEntity<>(authService.authenticate(loginForm), HttpStatus.OK);
+        if (authService.authenticate(loginForm) != null)
+            return new ResponseEntity<>(authService.authenticate(loginForm), HttpStatus.OK);
+        return new ResponseEntity<>( HttpStatus.BAD_REQUEST);
     }
 
     @PostMapping("/Contribute")
