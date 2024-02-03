@@ -1,24 +1,49 @@
 package com.DatNguyen.EngRisk;
 
-import com.DatNguyen.EngRisk.Database.JSONFormat;
-import com.google.auth.oauth2.GoogleCredentials;
-import com.google.cloud.firestore.Firestore;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
+import com.DatNguyen.EngRisk.Entity.DTO.User;
+import com.DatNguyen.EngRisk.Repository.UserRepo;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-
-import javax.annotation.PostConstruct;
-import java.io.FileInputStream;
-import java.io.IOException;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
+@RequiredArgsConstructor
 public class AppConfig {
+    private final UserRepo userRepo;
     @Bean
-    public JSONFormat jsonFormat(){
-        return new JSONFormat();
+    public UserDetailsService userDetailsService() {
+        return userEmail -> {
+            User user = userRepo.findByEmail(userEmail);
+            if (user != null) {
+                return user;
+            } else {
+                throw new UsernameNotFoundException("Invalid Email");
+            }
+        };
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+    }
+    @Bean
+    public AuthenticationProvider authenticationProvider() {
+        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
+        provider.setUserDetailsService(userDetailsService());
+        provider.setPasswordEncoder(passwordEncoder());
+        return provider;
+    }
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
+        return configuration.getAuthenticationManager();
     }
 
 }

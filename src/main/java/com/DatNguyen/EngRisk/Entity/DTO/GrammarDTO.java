@@ -1,4 +1,4 @@
-package com.DatNguyen.EngRisk.Entity;
+package com.DatNguyen.EngRisk.Entity.DTO;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -7,7 +7,7 @@ import org.antlr.v4.runtime.misc.NotNull;
 
 @Entity
 @Table(name = "GRAMMAR")
-public class Grammar {
+public class GrammarDTO {
     @Id
     @NotNull
     private String grammarType;
@@ -24,9 +24,9 @@ public class Grammar {
     @NotNull
     private String exampleSentence;
 
-    public Grammar(){}
+    public GrammarDTO(){}
 
-    public Grammar(String grammarType, String category, String usingSituation, String possitiveFormula, String negativeFormula, String questionFormula, String exampleSentence) {
+    public GrammarDTO(String grammarType, String category, String usingSituation, String possitiveFormula, String negativeFormula, String questionFormula, String exampleSentence) {
         this.grammarType = grammarType;
         this.category = category;
         this.usingSituation = usingSituation;

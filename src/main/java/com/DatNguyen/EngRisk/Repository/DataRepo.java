@@ -1,8 +1,7 @@
 package com.DatNguyen.EngRisk.Repository;
 
-import com.DatNguyen.EngRisk.Entity.Vocab;
+import com.DatNguyen.EngRisk.Entity.DTO.VocabDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 
-public interface DataRepo extends JpaRepository<Vocab, Long> {
+public interface DataRepo extends JpaRepository<VocabDTO, Long> {
 }

@@ -1,14 +1,13 @@
-package com.DatNguyen.EngRisk.Entity;
+package com.DatNguyen.EngRisk.Entity.DTO;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import org.antlr.v4.runtime.misc.NotNull;
-import org.hibernate.annotations.NotFound;
 
 @Entity
 @Table(name = "VOCAB")
-public class Vocab {
+public class VocabDTO {
     @Id
     @NotNull
     private String words;
@@ -21,9 +20,9 @@ public class Vocab {
     @NotNull
     private String exampleSentence;
 
-    public Vocab(){}
+    public VocabDTO(){}
 
-    public Vocab(String words, String category, String wordType, String pronoun, String exampleSentence) {
+    public VocabDTO(String words, String category, String wordType, String pronoun, String exampleSentence) {
         this.words = words;
         this.category = category;
         this.wordType = wordType;

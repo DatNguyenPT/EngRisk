@@ -1,65 +1,30 @@
 package com.DatNguyen.EngRisk.Entity;
 
-import jakarta.persistence.*;
-import java.sql.Date;
 
-@Entity
-@Table(name = "CONTRIBUTE")
+import com.DatNguyen.EngRisk.Entity.DTO.WordContributionDTO;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
+@Component
 public class WordContributeQueue {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String username;
-    private long score;
-    private Date latestContribute;
-    @ManyToOne
-    private Vocab vocab;
+    private List<WordContributionDTO> list;
     public WordContributeQueue(){}
-
-    public WordContributeQueue(long id, String username, long score, Date latestContribute, Vocab vocab) {
-        this.id = id;
-        this.username = username;
-        this.score = score;
-        this.latestContribute = latestContribute;
-        this.vocab = vocab;
+    public WordContributeQueue(List<WordContributionDTO>list){
+        this.list = list;
+    }
+    public void contribute(WordContributionDTO word){
+        if(word.getVocab() != null)
+            list.add(word);
+    }
+    public long getSize(){
+        if (list.isEmpty())
+            return 0;
+        return list.size();
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public long getScore() {
-        return score;
-    }
-
-    public void setScore(long score) {
-        this.score = score;
-    }
-
-    public Date getLatestContribute() {
-        return latestContribute;
-    }
-
-    public void setLatestContribute(Date latestContribute) {
-        this.latestContribute = latestContribute;
-    }
-
-    public Vocab getVocab(){
-        return vocab;
-    }
-    public void setVocab(Vocab vocab){
-        this.vocab = vocab;
+    public WordContributionDTO findContribution(){
+        // Unfinished
+        return null;
     }
 }

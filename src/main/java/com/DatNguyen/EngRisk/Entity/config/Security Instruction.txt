@@ -1,0 +1,32 @@
+Step by step Spring Security Set up:
+
++) If we are doing on User registration/ login features, we might have to extend User class to UserDetails class (Spring security)
++) Create an authentication filter which can perform many operations to validate and extract request header (JWT token, Email,..)
++) Create a JWT Service which include operations performed in authentication filter
++) Create a secure key (many online website help us to do this) for JWT service
++) Get the secure key as sign in key (need to decode then encode)
++) Extract all claims from JWT token
++) From those claims that we have extracted, get a specified claim -> Extract User infor from that claim
++) From the claim we also generate token and check if token is valid or not (expiration, owner)
+
+ALERT: UserDetails only has username param -> only get/set username -> only login with username
+If we want to login with email, phone number,.. we have to customize the UserDetails
+The UserDetails is implemented by User Entity, to customize we need to create a class extends User Entity class and add methods
+Now we can work on email login by custom UserDetails (Children of User Entity class)
+
++) After all the JWT filter, JWT service, we move on to set up security filter. Security filter is use to make the whole security process(include JWT service, JWT filter) works
++) Security config requires many other beans (Authentication Provider, JWT authentication filter)
++) Also Authentication Provider need encoder bean to decide which encoding method to use
++) Declare Authentication Manager bean to manage the authentication
+
+Definition:
++) Claim: claims are pieces of information asserted about a subject.
+          For example, an ID token (which is always a JWT) can contain a claim called name that asserts that the name of the user authenticating is "John Doe".
+          In a JWT, a claim appears as a name/value pair where the name is always a string and the value can be any JSON value.
+          Generally, when we talk about a claim in the context of a JWT, we are referring to the name (or key).
+          For example, the following JSON object contains three claims (sub, name, admin):
+          {
+                "sub": "1234567890",
+                "name": "John Doe",
+                "admin": true
+          }
